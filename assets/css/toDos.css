@@ -8,9 +8,13 @@ input:hover{
     color: #15EFF1;
 }
 
+
 .fa-plus{
     float: right;
 }
+
+
+
 h1{
     background: none;
     border-top-left-radius: 10%;
@@ -42,6 +46,7 @@ body{
     background: linear-gradient(to top, #88315b, #27102c); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
     background-repeat: no-repeat;
 }
+
 li span{
     background: #EF9708;
     color: #FE2CEC;
@@ -52,6 +57,9 @@ li span{
     display: none;
     transition: 0.3s linear;
 }
+
+
+
 li{
     background: none;
     height: 40px;
@@ -73,6 +81,8 @@ li:hover{
 li:hover span{
     text-shadow: 0 0 15px #15EFF1;
     display: inline-block;
+    transition: all .3s;
+
 }
 li:nth-child(2n){
     background: #f7f7f730;
@@ -115,6 +125,7 @@ input:focus{
 }
 
 input{
+
     font-size: 14px;
     font-family: 'Press Start 2P';
     text-transform: capitalize;
@@ -123,5 +134,8 @@ input{
     padding: 13px 13px 13px 20px;
     box-sizing: border-box;
     color: #15EFF1;
+<<<<<<< HEAD
     border: 3px rgba(0, 0, 0, 0);
+=======
+>>>>>>> 55be2e91b900baa127602cfcaa6c50fc12cb05bd
 }

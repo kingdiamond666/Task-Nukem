@@ -1,4 +1,5 @@
 
+
 var addNew = new Audio(" assets/audio/350876__cabled-mess__coin-c-09.wav")
 var added = new Audio(" assets/audio/381689__stumpbutt__retro-jump-sfx.wav")
 var finished = new Audio(" assets/audio/400579__alanmcki__retro-arcade-video-game-positive-tone.wav")
@@ -17,6 +18,7 @@ $('ul').on("click", "li",function(){
            }
 
 });
+
 //Click on X to delete Todo
 $('ul').on("click", "span",function(event){
     $(this).parent().fadeOut(500, function(){
@@ -25,6 +27,7 @@ $('ul').on("click", "span",function(event){
     });
     event.stopPropagation();
 });
+
 //input the keypress
 $("input[type='text']").keypress(function(event){
     if(event.which === 13){
@@ -33,8 +36,6 @@ $("input[type='text']").keypress(function(event){
     //create a new li and add to ul
     $('ul').append(`<li><span><i class="fa fa-trash"></i></span> ${toDoText}</li>`);
     addNew.play();
-    
-    typeIt();
     }
 })
 //toggle the input area
@@ -44,9 +45,11 @@ $('#toggle').click(function(){
     typeIt();
 })
 
+
 //type out the placeholder
 $('.fillItIn').attr('placeholder', '|');
 function typeIt() {
+
     var humanize = Math.round(Math.random() * (200 - 30)) + 30;
     timeOut = setTimeout(function () {
         char++;
@@ -60,4 +63,6 @@ function typeIt() {
         }
 
     }, humanize);
+
 }typeIt();
+
